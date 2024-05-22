@@ -1,0 +1,11 @@
+{% extends "base.html.jinja" %}
+{% block content %}
+<form method="POST">
+    <label>Kod produktu: </label>
+    <input type="text" name="product_id" placeholder="Podaj kod" required>
+    <input type="submit" text="Uruchom">
+</form>
+{% endblock content %}
+{% block title %}
+Ekstrakcja opinii o produkcie
+{% endblock title %}

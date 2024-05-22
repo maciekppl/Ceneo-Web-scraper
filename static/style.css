@@ -1,0 +1,56 @@
+.top {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.top h1 {
+    color: orange;
+    font-weight: bold;
+    margin: 10px 0px 10px 0px;
+}
+
+.main-bar {
+    position: absolute;
+    top: 100px;
+    right: 30px;
+    left: 30px;
+    height: 90px;
+    background-color: black;
+    display: flex;
+    align-items: center;
+}
+.main-bar a {
+    color: aliceblue;
+    font-weight: bold;
+    font-size: 14px;
+    margin-right: 10px;
+    margin-left: 9px;
+    text-decoration: none;
+}
+
+.container {
+    min-height: 1000px;
+}
+
+.footer {
+    bottom: 20px;
+    left: 30px;
+    right: 30px;
+    height: 90px;
+    background-color: black;
+    display: flex;
+    align-items: center;
+}
+.footer p{
+    color: aliceblue;
+    font-weight: bold;
+    font-size: 14px;
+    margin-right: 10px;
+    margin-left: 9px;
+    text-decoration: none;
+}
