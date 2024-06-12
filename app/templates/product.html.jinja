@@ -1,4 +1,29 @@
 {% extends "base.html.jinja" %}
 {% block content %}
     <p>To jest strona produktu {{product_id}}</p>
+    <table>
+        <thead>
+            <tr>
+                <th>ID opinii</th>
+                <th>Gwiazdki</th>
+                <th>Rekomendacja</th>
+                <th>Treść</th>
+                <th>Zalety</th>
+                <th>Wady</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            {% for opinion in opinions %}
+                <tr>
+                    <td>{{opinion.opinion_id}}</td>
+                    <td>{{opinion.stars}}</td>
+                    <td>{{opinion.recommendation}}</td>
+                    <td>{{opinion.content}}</td>
+                    <td>{{opinion.pros}}</td>
+                    <td>{{opinion.cons}}</td>
+                </tr>
+            {% endfor %}
+        </tbody>
+    </table>
 {% endblock content %}
