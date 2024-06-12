@@ -1,0 +1,15 @@
+{% extends "base.html.jinja" %}
+
+{% block content %}
+    <div class="title">
+        Zdobądź wiedzę na temat opinii każdego produktu!
+    </div>
+
+    <div class="row-one">
+        <p>
+            Ceneo Web Scraper pozwala użytkownikom wpisać podstronę dowolnego produktu z witryny ceneo.pl a następnie pozwala na ekstrakcję opinii o nim. Wpisz numer dowolnej podstrony na której znajduje się twój produkt i ciesz się wieloma opiniami od użytkowników. Wszystko bez konieczności wchodzenia na stronę ceneo.pl!
+        </p>
+        <img src="{{ url_for('static', filename='pics/ceneo-pic.png' )}}">
+    </div>
+
+{% endblock content %}

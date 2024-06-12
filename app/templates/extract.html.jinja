@@ -1,0 +1,22 @@
+{% extends "base.html.jinja" %}
+
+{% block content %}
+<form method="POST">
+    <label>Kod produktu: </label>
+    <input class="input-kod" type="text" name="product_id" placeholder="Podaj kod" required>
+    <input class="input-button" type="submit" value="Uruchom">
+</form>
+
+{% if error %}
+<div id="error-message" style="display: none;">
+    {{ error }}
+</div>
+<script>
+    alert(document.getElementById('error-message').textContent);
+</script>
+{% endif %}
+{% endblock content %}
+
+{% block title %}
+Ekstrakcja opinii o produkcie
+{% endblock title %}

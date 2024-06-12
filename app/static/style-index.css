@@ -1,0 +1,19 @@
+
+.title {
+    margin: 20px 350px 20px 350px;
+    font-weight: bold;
+    font-size: 34px;
+    align-items: center;
+}
+.row-one {
+    margin: 30px;
+    display: grid;
+    grid-template-columns: 1fr 500px;
+}
+.row-one p {
+    font-size: 22px;
+}
+.row-one img {
+    width: 200px;
+    margin-left: 100px;
+}

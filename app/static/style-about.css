@@ -1,0 +1,12 @@
+main {
+    margin-left: 20px;
+    display: grid;
+    grid-template-columns: 1fr 500px;
+}
+main h1 {
+    font-size: 40px;
+}
+main p {
+    font-size: 18px;
+    width: 800px;
+}

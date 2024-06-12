@@ -1,6 +1,7 @@
 from app import app
 from flask import render_template, request, redirect, url_for
 import requests
+from bs4 import BeautifulSoup
 
 @app.route('/')
 def index():
@@ -22,11 +23,11 @@ def extract():
         return render_template('extract.html.jinja', error="Produkt o podanym kodzie nie istnieje")
     return render_template('extract.html.jinja')
 @app.route('/products')
-def extract_one():
+def products():
     return render_template('products.html.jinja')
 @app.route('/about')
-def extract_two():
+def about():
     return render_template('about.html.jinja')
 @app.route('/product/<product_id>')
-def extract_three(product_id):
+def product(product_id):
     return render_template('product.html.jinja', product_id=product_id)

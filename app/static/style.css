@@ -1,0 +1,88 @@
+body {
+    margin: 0;
+    font-family: sans-serif;
+}
+/*Nagłówek*/
+.top {
+    background-color: black;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.top h1 {
+    color: orange;
+    font-weight: bold;
+    margin: 0;
+}
+/*nawigacja*/
+.top-bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: gray;
+    height: 57px;
+}
+.top-bar .left-side {
+    margin-left: 50px;
+}
+.top-bar .left-side a {
+    text-decoration: none;
+    color: white;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.top-bar .right-side {
+    margin-right: 60px;
+}
+.top-bar .right-side a {
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+    margin-left: 10px;
+
+    display: inline-block;
+    position: relative;
+    cursor: pointer;
+    transition: color 0.4s ease;
+}
+
+.top-bar .right-side a::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: 0;
+    right: 0;
+    background: yellow;
+    transition: width 0.5s ease-out;
+}
+.top-bar .right-side a:hover::after {
+    width: 100%;
+    left: 0;
+    right: auto;
+}
+.top-bar .right-side a:hover {
+    color: yellow;
+}
+/*footer*/
+.footer {
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 0;
+}
+.footer p {
+    color: aliceblue;
+    font-weight: bold;
+    font-size: 14px;
+    margin: 0;
+}
+
+

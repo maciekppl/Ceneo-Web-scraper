@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}Ceneo Web scraper{% endblock title %}</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style-index.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style-extract.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style-about.css') }}">
+</head>
+<body>
+    <div class="top">
+        <h1>Ceneo.pl WebScraper</h1>
+    </div>
+
+    <nav class="top-bar">
+        <div class="left-side">
+            <a href="{{url_for('index')}}">Ceneo Web Scraper</a>
+        </div>
+        <div class="right-side">
+            <a href="{{url_for('index')}}">Strona główna</a>
+            <a href="{{url_for('extract')}}">Ekstrakcja opinii</a>
+            <a href="{{url_for('products')}}">Lista produktów</a>
+            <a href="{{url_for('about')}}">O autorze</a>
+        </div>
+    </nav>
+
+    <div class="container mt-4">
+        {% block content %}
+        {% endblock content %}
+    </div>
+
+    <footer class="footer">
+            <p>Maciej Pustelnik Akademia Nauk Stosowanych w Nowym Targu</p>
+    </footer>
+
+</body>
+</html>

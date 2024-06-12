@@ -1,0 +1,27 @@
+{% extends "base.html.jinja" %}
+{% block title %}
+Autor projektu
+{% endblock title %}
+{% block content %}
+    <main>
+    <div class="first-one">
+        <h1>
+            Maciej Pustelnik
+        </h1>
+        <p>
+            Student I roku IE. Obecnie tworzy projekty stron internetowych, grafiki, analizy rynku. Autor tej strony.
+        </p>
+        <p>
+            Numer kontaktowy XXX XXX XXX
+        </p>
+        <p>
+            Adres e-mail randomemail@something.com
+        </p>
+    </div>
+    <div class="second-one">
+        <img src="{{ url_for('static', filename='pics/profile-picture.jpg') }}">
+    </div>
+        
+    </main>
+    
+{% endblock content %}
